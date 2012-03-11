@@ -39,16 +39,6 @@ the string being passed to MMExecute is javascript.
 This nested string situation is a little bit nightmarish, especially when you have to start dealing with multiple variables, and newlines, which have to be encoded and escaped on their journey through this string maze.
 This library takes care of all that for you and lets you just call a log function with the variables and strings you want output.
 
-The Set Up
-
-The FireworksFileIO class embeds FFIO.jsf. When it is instantiated it executes this javascript loading a "fireworks_file_io_library" global variable into the Fireworks javascript environment.
-From that point on, that global variable exposes functions which can be called by the actionscript IO functions of the FireworksFileIO object.
-
-Miscellaneous
-
-The lib folder contains the FWLog.swc which FireworksFileIO uses for logging. If you wish to change and recompile FireworksFileIO, you may need to re-reference this swc from your Flash Builder project.
-
-
 
 Released under the BSD License.		
 
